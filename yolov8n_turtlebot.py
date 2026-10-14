@@ -171,7 +171,7 @@ class Navigation(Node):
         # Subscription for Camera Stream
         self.image_sub = self.create_subscription(
             Image,
-            '/camera/image_raw',
+            '/image_raw',
             self.image_callback,
             qos_profile_sensor_data
         )
